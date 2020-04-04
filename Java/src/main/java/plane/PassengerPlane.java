@@ -28,8 +28,7 @@ public class PassengerPlane extends Plane{
         } else if (!(planeObject instanceof PassengerPlane) || !super.equals(planeObject)) {
             return false; 
         } else {
-            PassengerPlane plane = (PassengerPlane) planeObject;
-            return passengersCapacity == plane.passengersCapacity;
+            return passengersCapacity == ((PassengerPlane) planeObject).passengersCapacity;
         }
     }
 
